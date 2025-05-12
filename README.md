@@ -4,5 +4,6 @@
 
 <p align="center">
   <em>Language server for Jlang</em>
-  <em>!!!!!!!!!!!!! Work in progress !!!!!!!!!!!!!</em>
+  <br>
+  <b>!!!!!!!! Work in progress !!!!!!!!!</b>
 </p>
