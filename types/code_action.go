@@ -2,13 +2,14 @@ package types
 
 import (
 	"fmt"
+	"github.com/jkeresman01/Jlang_LS/constants"
 )
 
 type CodeAction struct {
-	Title          string         `json:"title"`
-	CodeActionKind CodeActionKind `json:"kind"`
-	IsPreferred    bool           `json:"isPreferred"`
-	WorkspaceEdit  WorkspaceEdit  `json:"edit"`
+	Title          string                   `json:"title"`
+	CodeActionKind constants.CodeActionKind `json:"kind"`
+	IsPreferred    bool                     `json:"isPreferred"`
+	//WorkspaceEdit  WorkspaceEdit            `json:"edit"`
 }
 
 func (c CodeAction) ToString() string {
@@ -17,7 +18,7 @@ func (c CodeAction) ToString() string {
 		c.Title,
 		c.CodeActionKind,
 		convertBoolToString(c.IsPreferred),
-		c.WorkspaceEdit.ToString(),
+		//c.WorkspaceEdit.ToString(),
 	)
 }
 
