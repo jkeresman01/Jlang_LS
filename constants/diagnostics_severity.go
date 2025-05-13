@@ -9,7 +9,7 @@ const (
 	DIAGNOSTIC_SEVERITY_HINT        DiagnosticSeverity = 4
 )
 
-func (severity DiagnosticSeverity) String() string {
+func (severity DiagnosticSeverity) ToString() string {
 	switch severity {
 	case DIAGNOSTIC_SEVERITY_ERROR:
 		return "Error"

@@ -7,7 +7,7 @@ const (
 	INSERT_TEXT_FORMAT_SNIPPET    InsertTextFormat = 2
 )
 
-func (format InsertTextFormat) String() string {
+func (format InsertTextFormat) ToString() string {
 	switch format {
 	case INSERT_TEXT_FORMAT_PLAIN_TEXT:
 		return "PlainText"

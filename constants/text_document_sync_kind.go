@@ -8,7 +8,7 @@ const (
 	MARKUP_KIND_OPTIONS_NO
 )
 
-func (kind MarkupKind) String() string {
+func (kind MarkupKind) ToString() string {
 	switch kind {
 	case MARKUP_KIND_PLAIN_TEXT:
 		return "PlainText"

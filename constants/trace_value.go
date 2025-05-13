@@ -8,7 +8,7 @@ const (
 	TRACE_VALUE_VERBOSE
 )
 
-func (traceValue TraceValue) String() string {
+func (traceValue TraceValue) ToString() string {
 	switch traceValue {
 	case TRACE_VALUE_OFF:
 		return "off"

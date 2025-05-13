@@ -16,11 +16,11 @@ func CreateMessage(rpc string, id int32) *Message {
 	}
 }
 
-func ToString(message *Message) string {
+func (message *Message) ToString() string {
 	return fmt.Sprintf("id :%d rpc version: %s ", message.Id, message.Rpc)
 }
 
 func main() {
 	message := CreateMessage("2.0", 1)
-	fmt.Println(ToString(message))
+	fmt.Println(message.ToString())
 }

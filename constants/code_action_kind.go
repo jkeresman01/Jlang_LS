@@ -8,7 +8,7 @@ const (
 	CODE_ACTION_REFACTOR
 )
 
-func (kind CodeActionKind) String() string {
+func (kind CodeActionKind) ToString() string {
 	switch kind {
 	case CODE_ACTION_EMPTY:
 		return "Empty"

@@ -7,7 +7,7 @@ const (
 	DIAGNOSTIC_TAG_DEPRECATED  DiagnosticTag = 2
 )
 
-func (tag DiagnosticTag) String() string {
+func (tag DiagnosticTag) ToString() string {
 	switch tag {
 	case DIAGNOSTIC_TAG_UNNECESSARY:
 		return "Unnecessary"
